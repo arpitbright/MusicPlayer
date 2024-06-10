@@ -1,0 +1,34 @@
+name: Music Player
+description: "A Flutter music player application with synchronized lyrics and neumorphic UI effects."
+publish_to: 'Bright Force Technology'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  assets_audio_player: ^3.1.1
+  flutter_neumorphic:
+    git:
+      url: https://github.com/den0206/Flutter-Neumorphic.git
+      ref: feature/remoce_accentcolor
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/audios/
+    - assets/images/
+  fonts:
+    - family: AssetAudioPlayer
+      fonts:
+        - asset: fonts/AssetAudioPlayer.ttf
